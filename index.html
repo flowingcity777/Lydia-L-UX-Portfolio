@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lydia L. — UX Portfolio</title>
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --surface: #ffffff;
+      --surface-soft: #f3eee7;
+      --text: #2f2a26;
+      --muted: #6e655d;
+      --border: #e5ddd4;
+      --accent: #8b5e83;
+      --accent-soft: #f3e8f1;
+      --shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #fbf9f6 0%, var(--bg) 100%);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      border-radius: var(--radius-md);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max-width), 92%);
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 78px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 14px;
+      line-height: 1.15;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      max-width: 11ch;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+    }
+
+    h3 {
+      font-size: 1.22rem;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .nav-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(251, 249, 246, 0.82);
+      border-bottom: 1px solid rgba(229, 221, 212, 0.8);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .hero {
+      padding: 38px 0 52px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .hero-copy,
+    .hero-visual,
+    .card,
+    .project-card,
+    .feature-card,
+    .about-card,
+    .cta-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-copy,
+    .project-card,
+    .feature-card,
+    .about-card,
+    .cta-card,
+    .card {
+      padding: 28px;
+    }
+
+    .hero-copy p {
+      max-width: 60ch;
+      margin-top: 12px;
+    }
+
+    .hero-actions,
+    .project-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      transition: transform 0.15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--text);
+    }
+
+    .hero-visual {
+      padding: 14px;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      min-height: 460px;
+      object-fit: cover;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .project-card img {
+      aspect-ratio: 16 / 10;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 18px;
+    }
+
+    .project-meta {
+      display: inline-flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 10px 0 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .project-card p + p {
+      margin-top: 10px;
+    }
+
+    .feature-card {
+      background: var(--surface-soft);
+      box-shadow: none;
+    }
+
+    .feature-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 1.5rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .list {
+      margin-top: 14px;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .list li + li {
+      margin-top: 8px;
+    }
+
+    footer {
+      padding: 38px 0 70px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-visual img {
+        min-height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-wrap">
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">Lydia L.</div>
+        <div class="nav-links">
+          <a href="#work">Work</a>
+          <a href="#approach">Approach</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">UX Portfolio</div>
+        <h1>Thoughtful digital experiences with quiet purpose</h1>
+        <p>
+          I design calm, human-centered interfaces that make complex or emotional experiences feel clearer, gentler, and easier to use.
+        </p>
+        <p>
+          My work focuses on translating real needs into practical digital systems—whether that means a creative tool, a service website, or a clearer path through uncertainty.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View projects</a>
+          <a class="btn btn-secondary" href="#about">About me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/pattern.png" alt="Preview of Mosaic Threads knitting pattern generator" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Selected Work</div>
+          <h2>Designing for both creativity and real-world care</h2>
+          <p>
+            My current portfolio brings together a creative tool and a service-focused healthcare experience. Together, they reflect how I think about clarity, usefulness, and human-centered design.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="project-card">
+            <img src="assets/pattern.png" alt="Mosaic Threads project preview" />
+            <h3>Mosaic Threads</h3>
+            <div class="project-meta">
+              <span class="tag">UX Design</span>
+              <span class="tag">Frontend</span>
+              <span class="tag">Creative Tool</span>
+            </div>
+            <p>
+              A web tool that transforms personal images into simplified knitting patterns using curated yarn-inspired color palettes.
+            </p>
+            <p>
+              This project focused on balancing visual meaning with practical usability, turning uploaded images into stitch-based charts that are easier to follow in real making contexts.
+            </p>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://flowingcity777.github.io/Mosaic-Threads-Portfolio-Page/" target="_blank" rel="noreferrer">View case study</a>
+              <a class="btn btn-secondary" href="https://flowingcity777.github.io/Mosaic-Threads/" target="_blank" rel="noreferrer">Live project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/clinic-homepage.png" alt="Acupuncture clinic website preview" />
+            <h3>Acupuncture Clinic Website</h3>
+            <div class="project-meta">
+              <span class="tag">UX Case Study</span>
+              <span class="tag">Service Design</span>
+              <span class="tag">Healthcare</span>
+            </div>
+            <p>
+              A calm, trustworthy clinic website designed to help patients understand services, reduce first-visit uncertainty, and request appointments more easily.
+            </p>
+            <p>
+              This project focused on real-world constraints: clear communication, responsible healthcare language, and a practical booking flow that remains manageable for the clinic owner.
+            </p>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://flowingcity777.github.io/acupuncture-clinic-case-study/" target="_blank" rel="noreferrer">View case study</a>
+              <a class="btn btn-secondary" href="https://flowingcity777.github.io/Chinese-Yan-Bian-Herbs/" target="_blank" rel="noreferrer">Live website</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Approach</div>
+          <h2>What I care about in design</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <strong>01</strong>
+            <h3>Clarity</h3>
+            <p>I like turning complicated or uncertain experiences into flows that feel calmer and easier to understand.</p>
+          </div>
+          <div class="feature-card">
+            <strong>02</strong>
+            <h3>Practicality</h3>
+            <p>I focus on solutions that are realistic to use and maintain, not just visually appealing ideas.</p>
+          </div>
+          <div class="feature-card">
+            <strong>03</strong>
+            <h3>Meaning</h3>
+            <p>I am drawn to products and services that support real people in creative, personal, or care-focused contexts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">About</div>
+          <h2>A thoughtful builder with a human-centered lens</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <p>
+              I’m interested in UX design because I care about how people feel while using digital products—not just whether something technically works.
+            </p>
+            <p style="margin-top: 14px;">
+              My projects often sit at the intersection of clarity, creativity, and emotional comfort. I’m especially drawn to experiences that help people make, learn, heal, or navigate uncertainty more easily.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>Currently focused on</h3>
+            <ul class="list">
+              <li>Building a stronger UX portfolio with intentional case studies</li>
+              <li>Exploring product ideas that feel humane rather than addictive</li>
+              <li>Improving frontend craft while staying grounded in user needs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta-card">
+          <div class="eyebrow">Contact</div>
+          <h2>Let’s connect</h2>
+          <p>
+            I’m continuing to grow my UX portfolio and would love opportunities to keep learning, designing, and building thoughtful digital experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:your-email@example.com">Email me</a>
+            <a class="btn btn-secondary" href="https://github.com/flowingcity777" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Lydia L. — UX Portfolio
+    </div>
+  </footer>
+</body>
+</html>
