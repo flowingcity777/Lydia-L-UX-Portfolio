@@ -15,6 +15,7 @@
       --accent: #8b5e83;
       --accent-soft: #f3e8f1;
       --shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.04);
       --radius-lg: 24px;
       --radius-md: 18px;
       --max-width: 1120px;
@@ -122,6 +123,10 @@
       font-size: 0.96rem;
     }
 
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
     .hero {
       padding: 38px 0 52px;
     }
@@ -176,11 +181,12 @@
       border-radius: 999px;
       font-weight: 700;
       border: 1px solid var(--border);
-      transition: transform 0.15s ease;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
     }
 
     .btn:hover {
       transform: translateY(-1px);
+      box-shadow: var(--shadow-soft);
     }
 
     .btn-primary {
@@ -204,6 +210,23 @@
       object-fit: cover;
     }
 
+    .hero-note {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .hero-pill {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.92rem;
+      border: 1px solid var(--border);
+    }
+
     .section-header {
       max-width: 760px;
       margin-bottom: 28px;
@@ -219,6 +242,11 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
     }
 
     .project-card img {
@@ -249,6 +277,11 @@
       margin-top: 10px;
     }
 
+    .project-actions {
+      margin-top: auto;
+      padding-top: 22px;
+    }
+
     .feature-card {
       background: var(--surface-soft);
       box-shadow: none;
@@ -277,6 +310,13 @@
       margin-top: 8px;
     }
 
+    .contact-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
     footer {
       padding: 38px 0 70px;
       text-align: center;
@@ -287,7 +327,8 @@
       .hero-grid,
       .grid-2,
       .grid-3,
-      .about-grid {
+      .about-grid,
+      .hero-note {
         grid-template-columns: 1fr;
       }
 
@@ -331,6 +372,11 @@
         <div class="hero-actions">
           <a class="btn btn-primary" href="#work">View projects</a>
           <a class="btn btn-secondary" href="#about">About me</a>
+        </div>
+        <div class="hero-note">
+          <div class="hero-pill">Calm, human-centered UX</div>
+          <div class="hero-pill">Creative and practical work</div>
+          <div class="hero-pill">Built with care and clarity</div>
         </div>
       </div>
 
@@ -459,7 +505,7 @@
           <p>
             I’m continuing to grow my UX portfolio and would love opportunities to keep learning, designing, and building thoughtful digital experiences.
           </p>
-          <div class="hero-actions">
+          <div class="contact-links">
             <a class="btn btn-primary" href="mailto:your-email@example.com">Email me</a>
             <a class="btn btn-secondary" href="https://github.com/flowingcity777" target="_blank" rel="noreferrer">GitHub</a>
           </div>
