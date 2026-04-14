@@ -235,9 +235,9 @@
       margin-bottom: 28px;
     }
 
-    .projects {
+    .grid-2 {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
     }
 
@@ -400,7 +400,7 @@
           </p>
         </div>
 
-        <div class="projects">
+        <div class="grid-2">
           <article class="project-card">
             <img src="assets/final.png" alt="Better Choice project preview" />
             <h3>Better Choice</h3>
@@ -422,7 +422,6 @@
             </div>
           </article> 
         
-        <div class="projects">
           <article class="project-card">
             <img src="assets/pattern.png" alt="Mosaic Threads project preview" />
             <h3>Mosaic Threads</h3>
