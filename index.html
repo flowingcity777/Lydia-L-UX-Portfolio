@@ -326,9 +326,11 @@
       color: var(--muted);
     }
 
-    @media (max-width: 920px) {
+    @media (max-width: 900px) {
       .hero-grid,
-      .grid-2,
+      .grid-2 {
+          grid-template-columns: 1fr;
+        },
       .grid-3,
       .about-grid,
       .hero-note {
