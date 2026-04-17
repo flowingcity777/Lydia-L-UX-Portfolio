@@ -1,31 +1,40 @@
-# UX Portfolio — Lydia L.
+# Lydia L. UX Portfolio
 
-A personal UX portfolio featuring selected projects focused on calm, human-centered digital experiences.
+A portfolio of UX and design work focused on clarity, emotional comfort, and thoughtful human-centered experiences.
+
+🔗 Live Site: https://flowingcity777.github.io/Lydia-L-UX-Portfolio/
 
 ## Overview
 
-This portfolio brings together work that balances creativity, clarity, and real-world usability.
+This portfolio brings together digital UX projects and cross-cultural spatial design work. The projects reflect how I think about clarity, usefulness, and calm interaction across different contexts.
 
-Featured projects include:
-- **Mosaic Threads** — a creative tool that transforms personal images into simplified knitting patterns
-- **Acupuncture Clinic Website** — a healthcare UX case study focused on trust, clarity, and simple appointment requests
+## Featured Project
 
-## Live Portfolio
+### Hanssem Beijing Showroom
+A cross-cultural showroom case study exploring how Korean design systems were adapted for Chinese spatial behaviors, material preferences, and real-world construction conditions.
 
-Add your GitHub Pages link here once published.
+## Selected Work Includes
 
-## Focus
+- **Hanssem Beijing Showroom** — spatial design, material selection, and execution coordination
+- **Better Choice** — an ethical habit companion designed without pressure-based behavior patterns
+- **Mosaic Threads** — a creative tool for transforming personal images into simplified knitting patterns
+- **Acupuncture Clinic Website** — a calm, trustworthy healthcare website focused on clarity and first-visit confidence
 
-This portfolio reflects my approach to UX design:
-- simplifying complex or uncertain experiences
-- designing with calm and clarity
-- creating practical, usable solutions
+## Focus Areas
+
+- UX design
+- human-centered design
+- ethical product thinking
+- cross-cultural design
+- spatial design
+- frontend implementation
 
 ## Built With
 
 - HTML
 - CSS
+- GitHub Pages
 
 ## Notes
 
-This portfolio is continuing to evolve as I refine my case studies and add new work.
+This portfolio is an evolving body of work as I continue refining case studies, visual presentation, and frontend craft.
