@@ -251,7 +251,37 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
+    
+.featured-project {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 0 4rem;
+}
 
+.featured-project__image img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.featured-project__content h3 {
+  margin: 0.5rem 0 0.75rem;
+}
+
+.project-tags {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .featured-project {
+    grid-template-columns: 1fr;
+  }
+}
     .hero-project {
       margin-bottom: 80px;
     }
@@ -421,24 +451,27 @@
           </p>
         </div>
 
-        <div class="grid-2">
-          <article class="hero-project">
-            <img src="assets/Homepage.jpg" alt="Beijing Showroom project preview" />
-            <h3>Hanssem Beijing Showroom</h3>
-            <div class="project-meta">
-              <span class="tag">Spatial Design</span>
-              <span class="tag">Interior</span>
-              <span class="tag">Cross-Cultural</span>
-            </div>
+        <section class="featured-project">
+          <div class="featured-project__image">
+            <img src="assets/images/hanssem-preview.jpg" alt="Preview of Hanssem Beijing Showroom case study">
+          </div>
+
+          <div class="featured-project__content">
+            <p class="eyebrow">Featured Project</p>
+            <h3>Beijing Showroom Design</h3>
+            <p class="project-tags">Spatial Design · Interior · Cross-Cultural</p>
             <p>
-              A cross-cultural showroom project translating Korean design systems into Chinese spatial and lifestyle contexts—bridging design, materials, and on-site execution.
+              A cross-cultural showroom project translating Korean design systems into
+              Chinese spatial and lifestyle contexts—bridging design, materials, and
+              on-site execution.
             </p>
-            <div class="project-actions">
-              <a class="btn btn-primary" href="https://github.com/flowingcity777/hanssem-beijing-showroom" target="_blank" rel="noreferrer">View case study</a>
-              <a class="btn btn-secondary" href="https://flowingcity777.github.io/hanssem-beijing-showroom/" target="_blank" rel="noreferrer">Live project</a>
-            </div>
-          </article> 
-          
+            <a href="https://flowingcity777.github.io/hanssem-beijing-showroom/" class="project-link">
+              View case study
+            </a>
+        </div>
+     </section>
+
+        <div class="grid-2">    
           <article class="project-card">
             <img src="assets/final.png" alt="Better Choice project preview" />
             <h3>Better Choice</h3>
