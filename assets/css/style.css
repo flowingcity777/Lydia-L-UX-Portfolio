@@ -38,7 +38,7 @@ img {
 
 /* HERO IMAGE ANIMATION */
 .hero-visual img {
-  animation: heroFloat 10s ease-in-out infinite alternate;
+  animation: heroFloat 10s ease-in-out infinite alternate !important;
   transform-origin: center;
 }
 
@@ -156,6 +156,11 @@ header {
 
 /* ensure content stays above */
 .hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 40px;
+
   position: relative;
   z-index: 1;
 }
