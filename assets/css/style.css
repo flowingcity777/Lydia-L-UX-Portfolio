@@ -40,6 +40,11 @@ img {
 .hero-visual img {
   animation: heroFloat 7s ease-in-out infinite alternate;
   animation-delay: 0.3s;
+  transition: transform 0.6s ease;
+}
+
+.hero-visual:hover img {
+  transform: translateY(-20px) scale(1.045);
 }
 
 @keyframes heroFloat {
@@ -57,6 +62,7 @@ img {
 
 .hero-visual {
   animation: heroFloat 2s linear infinite alternate;
+  cursor: pointer;
 }
 
 @keyframes fadeUp {
