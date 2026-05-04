@@ -41,12 +41,12 @@ img {
   animation: testMove 1s linear infinite alternate;
 }
 
-@keyframes testMove {
-  from {
-    transform: translateX(0px);
+@keyframes heroFloat {
+  0% {
+    transform: translateY(0px) scale(1);
   }
-  to {
-    transform: translateX(40px);
+  100% {
+    transform: translateY(-18px) scale(1.04);
   }
 }
 
