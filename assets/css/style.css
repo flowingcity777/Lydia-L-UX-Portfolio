@@ -173,9 +173,11 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.2rem, 3vw, 2.8rem);
-  line-height: 1.25;
-  margin-bottom: 18px;
+  font-size: clamp(2.4rem, 3.2vw, 3rem);
+  line-height: 1.18;
+  margin-bottom: 22px;
+  letter-spacing: -0.015em;
+  max-width: 18ch;
 }
 
 h2 {
@@ -187,9 +189,18 @@ h3 {
 }
 
 .hero p {
-  font-size: 1.1rem;
-  max-width: 680px;
-  margin-bottom: 28px;
+  font-size: 1.05rem;
+  max-width: 52ch;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.hero-copy > * + * {
+  margin-top: 10px;
+}
+
+.hero-actions {
+  margin-top: 26px;
 }
 
 p {
