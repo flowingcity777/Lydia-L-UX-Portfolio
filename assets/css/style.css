@@ -102,11 +102,19 @@ a {
 }
 
 .section {
-  padding: 78px 0;
+  padding: 100px 0;
 }
 
 .section + .section {
   margin-top: 40px;
+}
+
+#work {
+  margin-bottom: 60px;
+}
+
+#approach {
+  margin-bottom: 60px;
 }
 
 .eyebrow {
@@ -384,10 +392,11 @@ p {
 }
 
 .contact-links {
-  display: flex;
-  gap: 16px;
+  display: flex !important;
+  gap: 20px !important;
   flex-wrap: wrap;
-  margin-top: 22px;
+  margin-top: 24px;
+  outline: 2px solid red;
 }
 
 footer {
