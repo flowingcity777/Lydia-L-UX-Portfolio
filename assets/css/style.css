@@ -44,6 +44,7 @@ img {
 }
 
 .hero-visual:hover img {
+  animation-play-state: paused;
   transform: translateY(-20px) scale(1.045);
 }
 
@@ -61,7 +62,7 @@ img {
 }
 
 .hero-visual {
-  animation: heroFloat 2s linear infinite alternate;
+  animation: fadeIn 1.6s ease forwards;
   cursor: pointer;
 }
 
