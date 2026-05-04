@@ -38,12 +38,13 @@ img {
 
 .image-card {
   overflow: hidden;
-  max-height: 520px;
   height: 100%;
 }
 
 .image-card video {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 5 / 4;
+  width: 100%;
+  height: auto;
 }
 
 /* HERO IMAGE ANIMATION */
