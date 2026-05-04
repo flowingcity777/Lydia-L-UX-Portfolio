@@ -30,6 +30,25 @@ body {
   line-height: 1.6;
 }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: var(--text);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: var(--surface-soft);
+  color: var(--text);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -39,12 +58,14 @@ img {
 .image-card {
   overflow: hidden;
   height: 100%;
+  width: min(100%, 560px);
 }
 
 .image-card video {
-  aspect-ratio: 5 / 4;
+  aspect-ratio: 4 / 5;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 /* HERO IMAGE ANIMATION */
@@ -91,7 +112,7 @@ img {
   animation: fadeIn 1.6s ease forwards;
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 @keyframes fadeUp {
@@ -204,9 +225,9 @@ header {
 /* ensure content stays above */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 0.95fr 1.05fr;
   align-items: center;
-  gap: 60px; /* more breathing room */
+  gap: 44px;
   position: relative;
   z-index: 1;
 }
