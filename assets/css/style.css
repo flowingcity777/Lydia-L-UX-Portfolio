@@ -38,7 +38,7 @@ img {
 
 /* HERO IMAGE ANIMATION */
 .hero-visual img {
-  animation: testMove 1s linear infinite alternate;
+  animation: heroFloat 7s ease-in-out infinite alternate;
 }
 
 @keyframes heroFloat {
@@ -46,7 +46,7 @@ img {
     transform: translateY(0px) scale(1);
   }
   100% {
-    transform: translateY(-18px) scale(1.04);
+    transform: translateY(-16px) scale(1.035);
   }
 }
 
