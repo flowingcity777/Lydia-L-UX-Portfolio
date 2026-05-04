@@ -105,6 +105,10 @@ a {
   padding: 78px 0;
 }
 
+.section + .section {
+  margin-top: 40px;
+}
+
 .eyebrow {
   display: inline-block;
   padding: 8px 14px;
@@ -377,6 +381,13 @@ p {
   font-size: 0.85rem;
   color: var(--muted);
   white-space: nowrap;
+}
+
+.contact-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 22px;
 }
 
 footer {
