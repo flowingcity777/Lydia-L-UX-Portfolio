@@ -58,7 +58,7 @@ img {
 
 .hero-visual:hover video {
   animation-play-state: paused;
-  transform: translateY(-20px) scale(1.045);
+  transform: translateY(-10px) scale(1.045);
 }
 
 @keyframes heroFloat {
