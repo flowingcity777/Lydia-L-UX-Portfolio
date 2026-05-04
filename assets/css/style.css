@@ -44,7 +44,19 @@ img {
   max-width: 90%;
 }
 
-.hero-visual:hover img {
+.hero-visual video {
+  width: 100%;
+  max-width: 90%;
+  border-radius: var(--radius-md);
+  display: block;
+
+  /* keep your animation feel */
+  animation: heroFloat 7s ease-in-out infinite alternate;
+  animation-delay: 0.3s;
+  transition: transform 0.6s ease;
+}
+
+.hero-visual:hover video {
   animation-play-state: paused;
   transform: translateY(-20px) scale(1.045);
 }
@@ -436,11 +448,9 @@ footer {
     text-align: center;
   }
 
-  .hero-visual {
-    width: 100%;
-    justify-content: center;
-  }
-
+  .hero-visual video {
+  width: min(85vw, 340px);
+}
   .hero-visual img {
     width: min(85vw, 340px);
     max-width: 340px;
