@@ -56,7 +56,7 @@ img {
 }
 
 .hero-visual {
-  animation: fadeIn 1.6s ease forwards;
+  animation: heroFloat 2s linear infinite alternate;
 }
 
 @keyframes fadeUp {
