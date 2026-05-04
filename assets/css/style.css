@@ -39,6 +39,7 @@ img {
 /* HERO IMAGE ANIMATION */
 .hero-visual img {
   animation: heroFloat 7s ease-in-out infinite alternate;
+  animation-delay: 0.3s;
 }
 
 @keyframes heroFloat {
