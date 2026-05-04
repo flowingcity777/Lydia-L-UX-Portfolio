@@ -35,6 +35,12 @@ A cross-cultural showroom case study exploring how Korean design systems were ad
 - CSS
 - GitHub Pages
 
+## Credits
+- Hero video created using Canva
+
+## Notes
+- Layout and front-end refined through iterative prototyping and AI-assisted feedback
+
 ## Notes
 
 This portfolio is an evolving body of work as I continue refining case studies, visual presentation, and frontend craft.
