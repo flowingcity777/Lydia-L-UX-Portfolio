@@ -571,5 +571,17 @@ footer {
 
   .about-editorial-media img {
     height: 430px;
+    filter: brightness(0.92) contrast(0.95) saturate(0.9);
   }
+
+  .about-editorial-media {
+  position: relative;
+}
+
+.about-editorial-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.12);
+}
 }
