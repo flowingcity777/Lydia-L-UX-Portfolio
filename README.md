@@ -36,7 +36,7 @@ A cross-cultural showroom case study exploring how Korean design systems were ad
 - GitHub Pages
 
 ## Credits
--About page image generated using AI (ChatGPT image generation)
+- About page image generated using AI-assisted tools (ChatGPT)
 - Hero video created using Canva
 
 ## Notes
