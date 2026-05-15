@@ -18,7 +18,7 @@ A cross-cultural showroom case study exploring how Korean design systems were ad
 - **Hanssem Beijing Showroom** — spatial design, material selection, and execution coordination
 - **Better Choice** — an ethical habit companion designed without pressure-based behavior patterns
 - **Mosaic Threads** — a creative tool for transforming personal images into simplified knitting patterns
-- **Acupuncture Clinic Website** — a calm, trustworthy healthcare website focused on clarity and first-visit confidence
+- **Natural Path** — a calm, trustworthy healthcare website focused on clarity and first-visit confidence
 
 ## Focus Areas
 
