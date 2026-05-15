@@ -164,7 +164,10 @@ a {
 }
 
 .eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: max-content;
   padding: 8px 14px;
   border-radius: 999px;
   background: var(--accent-soft);
@@ -489,6 +492,12 @@ footer {
     width: min(85vw, 340px);
     max-width: 340px;
   }
+  
+  .eyebrow {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 /* About page — editorial layout */
