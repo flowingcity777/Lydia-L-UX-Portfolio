@@ -178,6 +178,12 @@ a {
   margin-bottom: 16px;
 }
 
+.featured-project__content .eyebrow {
+  align-self: flex-start;
+  width: auto;
+  max-width: max-content;
+}
+
 header {
   padding: 20px 0;
 }
@@ -498,6 +504,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+  .featured-project__content .eyebrow {
+    align-self: center;
+    width: auto;
+    max-width: max-content;
+  }
 }
 
 /* About page — editorial layout */
