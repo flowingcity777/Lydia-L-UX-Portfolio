@@ -2,7 +2,7 @@
 
 A portfolio of UX and design work focused on clarity, emotional comfort, and thoughtful human-centered experiences.
 
-🔗 Live Site: https://flowingcity777.github.io/Lydia-L-UX-Portfolio/
+🔗 Live Site: https://flowingcity777.github.io/lydia-l-ux-portfolio/
 
 ## Overview
 
